@@ -31,7 +31,7 @@ export const bodyContent=(props)=>{
 
 export const asideContent=(props)=>{
     let relatedLink;
-    let heading=document.createElement("h5");
+    let heading=document.createElement("h3");
     heading.textContent="RELATED LINKS"
     asidediv.appendChild(heading);
     let ul = document.createElement("ul");

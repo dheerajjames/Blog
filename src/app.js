@@ -2,13 +2,18 @@ import { bodyChangeContent } from "./components/changeContent.js";
 import { asideChangeContent } from "./components/changeContent.js";
 import { bodyContent } from "./components/mainContent.js";
 import { asideContent } from "./components/mainContent.js";
-
-
-
+import { NavigationBar } from "./components/navigation.js";
+import { footerFunction } from "./components/footer.js";
+import { footer } from "./data/data.js";
+ 
 const rootDiv =document.getElementById("root");
-const bodyDiv=document.getElementById("bodydiv");
-const asideDiv=document.getElementById("asidediv");
+const navBar = document.getElementById("navigation");
+const footerDiv = document.getElementById("footer");
+// const bodyDiv=document.getElementById("bodydiv");
+// const asideDiv=document.getElementById("asidediv");
 
+ navBar.appendChild(NavigationBar());
+ footerDiv.appendChild(footerFunction(footer.footerData));
 
 let myArr=[];
 // console.log(myArr);

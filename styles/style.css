@@ -3,18 +3,47 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Noto Sans SC', sans-serif;
   }
 
   .navigation {
-    background-color: #2a2725;
+    background-color: #2a2725b9;
     /* background-color: black; */
     /* color: white; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+    justify-content:center;
     align-items: center;
     padding: 10px;
   }
+
+ .social{
+   display: flex;
+ }
+  .footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2a2725b9;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-list {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  .footer-anchor {
+    text-decoration: none;
+    color: black;
+  }
+  .footer .social{
+    margin-left: 30px;
+  }
+
   .company-logo {
     width: 150px;
   }
@@ -41,23 +70,33 @@
     color: white;
     font-size: 1.2rem;
   }
+  .nav-link:hover{
+    border-bottom: 1px solid white;
+  }
 
 .imagediv{
     margin: 20px;
 }
 .content{
     margin: 20px;
+    font-size: 1.2rem;
 }
 .list{
   margin-top: 20px;
-  list-style: circle;
+  list-style: none;
+  padding: 20px;
+  background-color: #2a272579;
+  border-radius: 10px;
 }
-.list::before{
-  width :20px;
+.list:hover{
+  /* font-size :1.5rem; */
+  background-color: black ;
+  color: white;
 }
 
 #root{
     margin-top: 100px;
+    margin-right: 100px ;
     display: flex;
     /* border-style: inset; */
 }
@@ -68,16 +107,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right:100px;
     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
 }
+
 #asidediv{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     width: 100vw;    
+    /* width:fit-content; */
+    /* border: 1px solid #2a2725; */
 }
-
+.themeButton{
+  border: 0px none;
+  padding: 10px;
+  background-color:#423f3e;
+  color: white;
+}
+.themeChange {
+  background-color: black;
+  color: white;
+}
 
 @media (max-width: 1400px){
   #bodydiv{
@@ -105,6 +157,9 @@
 @media (max-width:768px){
   .navigation{
     width:820px;
+  }
+  .footer{
+    width: 820px;
   }
   #asidediv{
     margin: 30px 180px;
