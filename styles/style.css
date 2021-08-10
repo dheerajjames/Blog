@@ -135,6 +135,10 @@
   #bodydiv{
     margin-left: 100px;
   }
+  .nav-container{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 1200px){
   #root{
